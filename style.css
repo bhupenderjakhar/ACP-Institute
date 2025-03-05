@@ -309,6 +309,9 @@ h2 {
 
 /* achivements start */
 
+.achivements{
+    padding: 30px 0px;
+}
 .heading {
     font-size: 24px;
     font-weight: bold;
@@ -334,6 +337,8 @@ h2 {
     height: 60px;
     max-width: 150px;
     object-fit: contain;
+    mix-blend-mode: darken;
+    aspect-ratio: 4/2;
 }
 
 .more-text {
