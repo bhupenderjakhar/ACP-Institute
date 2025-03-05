@@ -4,6 +4,14 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --blu:#306998;
+    --yel:#FFD43B;
+}
 
 body {
     background: #f5f5f5;
@@ -12,7 +20,7 @@ body {
 @font-face {
     font-family: RevueBT;
     src: url(fonts/REVUEN.TTF);
-  }
+}
 
 /* Navbar */
 .navbar {
@@ -29,10 +37,12 @@ body {
 }
 
 .logo {
-    font-size: 22px;
+    font-size: 30px;
     font-weight: bold;
     font-family: RevueBT;
-    width: 300px;
+    width: 310px;
+    margin-left: 30px;
+    color: var(--blu);
 }
 
 
@@ -50,7 +60,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
     transition: max-height 0.5s ease-in-out;
 }
@@ -58,26 +68,28 @@ body {
 .nav-links li a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.signup {
-    background: blue;
-    color: white;
-    padding: 5px 10px;
+.call {
+    color: white !important;
+    background-color: var(--blu);
+    padding: 10px 20px;
     border-radius: 5px;
 }
-
 
 
 /* Hero Section */
 .hero {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 130px 20px;
+    padding: 103px 47px;
     background: white;
     height: 100vh;
+    justify-content: space-between;
+    margin-top: 40px;
 }
 
 .hero-content {
@@ -85,20 +97,22 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 32px;
+    font-size: 40px;
+    line-height: 1.5;
 }
 
-.hero-content p{
+.hero-content p {
     padding: 10px 0px 10px 0px;
+    font-size: 20px;
 }
 
 .highlight {
-    color: blue;
+    color: var(--blu);
 }
 
 .cta-btn {
     display: inline-block;
-    background: blue;
+    background: var(--blu);
     color: white;
     padding: 10px 15px;
     margin-top: 15px;
@@ -106,9 +120,17 @@ body {
     border-radius: 5px;
 }
 
+.hero-image{
+    margin-right: 130px;
+}
+
 .hero-image img {
+    /* clip-path: ellipse(50% 50% at 50% 50%); */
     width: 300px;
+    height: 300px;
     border-radius: 10px;
+    /* object-fit: cover; */
+    
 }
 
 /* Responsive */
@@ -140,11 +162,16 @@ body {
     .hero {
         flex-direction: column;
         text-align: center;
+        height: auto;
     }
 
     .hero-content {
         max-width: 100%;
         padding: 10px 0px 20px 0px;
+    }
+
+    .hero-image{
+        margin-right: 0px;
     }
 
     .hero-image img {
@@ -153,6 +180,47 @@ body {
 }
 
 /* Hero Section End */
+
+
+/* Course Section */
+.courses {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.courses h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/*  Course Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/*  Individual Course Card */
+
+
+/*  Hover Effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/*  Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 150px;
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
 
 /* card start */
 
@@ -273,4 +341,140 @@ h2 {
     font-size: 18px;
     color: gray;
     text-align: center;
+}
+
+/* ✅ Footer Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* ✅ Footer Heading */
+.footer h4 {
+    font-size: 16px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer h2 {
+    font-size: 28px;
+    color: #3a76c4;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* ✅ Footer Content */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-box h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3a76c4;
+    margin-bottom: 8px;
+}
+
+.footer-box p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* ✅ Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+/* ✅ Footer Bottom */
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 30px auto 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+/* ✅ Footer Left (Logo) */
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left img {
+    width: 70px;
+    height: 70px;
+}
+
+.footer-left span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d93025;
+    margin-left: 5px;
+}
+
+/* ✅ Footer Links */
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #000;
+}
+
+/* ✅ Footer Social Icons */
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icons a {
+    font-size: 18px;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #000;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
 }

@@ -6,6 +6,7 @@
     <title>ACP Institute</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
    
 </head>
 <body>
@@ -13,12 +14,12 @@
         <div class="logo">ACP INSTITUTE</div>
         <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
         <ul class="nav-links" id="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">New Courses</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <!-- <li><a href="#">Log in</a></li>
-            <li><a href="#" class="signup">Sign up</a></li> -->
+            <li><a href="/">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact</a></li>
+            <!-- <li><a href="#">Log in</a></li> -->
+            <li><a href="tel:918278495411" class="call">Call</a></li>
         </ul>
     </nav>
     
@@ -26,13 +27,28 @@
         <div class="hero-content">
             <h1>Learn & become the <br><span class="highlight">Top 1% software developer</span></h1>
             <p>Learn <span id="course">Data Science</span></p>
-            <a href="#" class="cta-btn">Ultimate Placement Solution</a>
+            <a href="#" class="cta-btn">Ultimate Placement Solution <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="hero-image">
-            <img src="images/demo.webp" alt="Apna College" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Apna College" />
         </div>
     </section>
 
+     <!--  Course Cards -->
+    <section class="courses" id="courses">
+        <h2>Our Courses</h2>
+        <div class="card-container">
+            <div class="card">Data Science</div>
+            <div class="card">Data Analyst</div>
+            <div class="card">webdev</div>
+            <div class="card">Java</div>
+            <div class="card">Python</div>
+            <div class="card">SQL</div>
+            <div class="card">graphic designing</div>
+            <div class="card">Accounting</div>
+            <div class="card">Basic Computers</div>
+        </div>
+    </section>
 
     <!-- cards start -->
     <h2>Our Selected Students</h2>
@@ -84,62 +100,64 @@
             }, 1000);
             let cards=[
                 {
-                    company_name : "Microsoft (Intern)",
-                    img : "images/sanjay panchal.jpeg",
-                    name : "Sanjay Panchal",
-                    branch : "CSE",
-                    degree : "BTech",
-                    designation :"Data science",
-                    salary : "15 LPA",
-                    company_logo : "images/micri.png",
-                    alt_text : "Microsoft Logo"
-                },
-                {
-                    company_name : "HCL Tech",
-                    img : "images/sakshi.jpg",
-                    name : "Sakshi",
-                    branch : "CSE",
-                    degree : "BCA",
-                    designation :"Cyber security engineer",
-                    salary : "7 LPA",
-                    company_logo : "images/HCL.png",
-                    alt_text : "MOD"
-                },
-                {
-                    company_name : "Wipro's IT consulting",
-                    img : "images/palak khurana.jpeg",
-                    name : "Palak Khurana",
-                    branch : "CSE",
-                    degree : "BTech",
-                    designation :"Software Developer",
-                    salary : "7 LPA",
-                    company_logo : "images/wipro.jpg",
-                    alt_text : "wipro"
-                },
-                {
-                    company_name : "Genpact India Private Limited",
-                    img : "images/ankit.jpeg",
-                    name : "Ankit",
+                    company_name : " Microsoft (Intern)",
+                    img : " images/sanjay panchal.jpeg",
+                    name : " Sanjay Panchal",
                     branch : " CSE",
-                    degree : "BTech",
-                    designation :"Anti-Money Laundering (AML) analyst",
+                    degree : " BTech",
+                    designation :" Data science",
+                    salary : " 15 LPA",
+                    company_logo : "images/micri.png",
+                    alt_text : " Microsoft Logo"
+                },
+                {
+                    company_name : " HCL Tech",
+                    img : " images/sakshi.jpg",
+                    name : " Sakshi",
+                    branch : " CSE",
+                    degree : " BCA",
+                    designation :" Cyber security engineer",
+                    salary : " 7 LPA",
+                    company_logo : " images/HCL.png",
+                    alt_text : " MOD"
+                },
+                {
+                    company_name : " Wipro's IT consulting",
+                    img : "images/palak khurana.jpeg",
+                    name : " Palak Khurana",
+                    branch : " CSE",
+                    degree : " BTech",
+                    designation :" Software Developer",
+                    salary : " 7 LPA",
+                    company_logo : " images/wipro.jpg",
+                    alt_text : " wipro"
+                },
+                {
+                    company_name : " Genpact India Private Limited",
+                    img : "images/ankit.jpeg",
+                    name : " Ankit",
+                    branch : " CSE",
+                    degree : " BTech",
+                    designation :" (AML) analyst",
                     salary : "7 LPA",
                     company_logo : "images/Genpact_logo.svg.png",
-                    alt_text : "Genpact"
+                    alt_text : " Genpact"
                 },
                 {
-                    company_name : "Ministry of Defence",
-                    img : "images/sumit.jpeg",
+                    company_name : " Ministry of Defence",
+                    img : " images/sumit.jpeg",
                     name : " Sumit",
                     branch : " CSE",
-                    degree : "BCA",
-                    designation :"DEO",
-                    salary : "7 LPA",
+                    degree : " BCA",
+                    designation :" DEO",
+                    salary : " 7 LPA",
                     company_logo : "images/mof.png",
-                    alt_text : "Ministry of Defence"
+                    alt_text : " Ministry of Defence"
                 },
+
             ];
-    
+
+            
             
                 let card = "";
                 cards.map((item)=>{
@@ -165,5 +183,50 @@
         
     
         </script>
+       <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <h4>WE WOULD LOVE TO HEAR FROM YOU</h4>
+        <h2>GET IN TOUCH</h2>
+
+        <div class="footer-content">
+            <!-- Email -->
+            <div class="footer-box">
+                <h3>E-MAIL</h3>
+                <p>ACPINSTITUTE@GMAIL.com</p>
+            </div>
+
+            <!-- Call -->
+            <div class="footer-box">
+                <h3>CALL</h3>
+                <p><a href="tel:918278495411">+91 8278495411</a></p>
+            </div>
+
+            <!-- Address -->
+            <div class="footer-box">
+                <h3>ADDRESS</h3>
+                <p>NEAR POST OFFICE OLD BUS STAND, GOHANA (SONIPAT) 131301</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="footer-left">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+       
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/people/ACP-Institute-Gohana/100054267650182/" target="_blank"><i class="bi bi-facebook"></i></i></a>
+            <a href="https://www.linkedin.com/company/acpinstitute/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@acp.institute" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://wa.me/918278495411" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            
+        </div>
+    </div>
+</footer>
+
+
+
 </body>
 </html>
