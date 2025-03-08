@@ -22,6 +22,63 @@ body {
     src: url(fonts/REVUEN.TTF);
 }
 
+
+/* whatsapp button */
+.whatsapp-button{
+    bottom: 15px;
+    left: 10px;
+    background-color: #25d366;
+  
+  }
+  
+  .call-button{
+    bottom: 80px;
+    left: 10px;
+    background-color: var(--color-pink-100);
+    background-color: var(--blu);
+
+  }
+  
+  .call-button:hover,.whatsapp-button:hover{
+    color: white;
+  }
+  .button{
+    position: fixed;
+    z-index: 99;
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: effect 2s infinite ease-in;
+  }
+  
+  @keyframes effect {
+    20%, 100% {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    0%, 10%{
+        width: 55px;
+        height: 55px;
+        font-size: 35px;
+    }
+    5%{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+  }
+  
+  /* button end */
+
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -53,6 +110,8 @@ body {
     border: none;
     cursor: pointer;
     display: none;
+    color: var(--blu);
+
 }
 
 .nav-links {
@@ -73,12 +132,12 @@ body {
     cursor: pointer;
 }
 
-.call {
+/* .call {
     color: white !important;
     background-color: var(--blu);
     padding: 10px 20px;
     border-radius: 5px;
-}
+} */
 
 
 /* Hero Section */
@@ -172,10 +231,12 @@ body {
 
     .hero-image{
         margin-right: 0px;
+        width: 100%;
     }
 
     .hero-image img {
         width: 80%;
+        height: inherit;
     }
 }
 
