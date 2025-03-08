@@ -32,8 +32,8 @@ body {
   }
   
   .call-button{
-    bottom: 80px;
-    left: 10px;
+    bottom: 15px;
+    right: 10px;
     background-color: var(--color-pink-100);
     background-color: var(--blu);
 
