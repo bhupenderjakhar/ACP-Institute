@@ -23,17 +23,23 @@ body {
 }
 
 
+@font-face {
+    font-family: Satoshi-Medium;
+    src: url(fonts/Satoshi-Medium.ttf);
+}
+
+
 /* whatsapp button */
 .whatsapp-button{
     bottom: 15px;
-    left: 10px;
+    right: 10px;
     background-color: #25d366;
   
   }
   
   .call-button{
     bottom: 15px;
-    right: 10px;
+    left: 10px;
     background-color: var(--color-pink-100);
     background-color: var(--blu);
 
@@ -149,6 +155,7 @@ body {
     height: 100vh;
     justify-content: space-between;
     margin-top: 40px;
+    font-family: Satoshi-Medium;
 }
 
 .hero-content {
@@ -222,11 +229,17 @@ body {
         flex-direction: column;
         text-align: center;
         height: auto;
+        padding: 40px;
     }
-
+    
     .hero-content {
+        text-align: left;
         max-width: 100%;
         padding: 10px 0px 20px 0px;
+    }
+
+    .hero-content h1{
+        font-size: 25px;
     }
 
     .hero-image{

@@ -40,8 +40,7 @@
             <a href="#" class="cta-btn">Ultimate Placement Solution <i class="bi bi-chevron-right"></i></a>
         </div>
         <div class="hero-image">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
-                alt="Apna College" />
+            <img id="hero-image"/>
         </div>
     </section>
 
@@ -89,111 +88,6 @@
         <div class="more-text">+ many more</div>
     </section>
 
-    <script>
-        function toggleMenu() {
-            var navLinks = document.getElementById("nav-links");
-            navLinks.classList.toggle("active");
-        }
-    </script>
-
-
-    <script>
-
-        let arr = ['Data Science', 'Data Analysis', 'Web Development', 'Tally', 'Graphics', 'Typing', 'Steno'];
-        let i = 0;
-        setInterval(() => {
-
-            document.getElementById('course').innerHTML = arr[i];
-            i++;
-            if (i == arr.length) {
-                i = 0;
-            }
-        }, 1000);
-        let cards = [
-            {
-                company_name: " Microsoft (Intern)",
-                img: " images/sanjay panchal.jpeg",
-                name: " Sanjay Panchal",
-                branch: " CSE",
-                degree: " MCA",
-                designation: " Data science",
-                salary: " 15 LPA",
-                company_logo: "images/micri.png",
-                alt_text: " Microsoft Logo"
-            },
-            {
-                company_name: " HCL Tech",
-                img: " images/sakshi.jpg",
-                name: " Sakshi",
-                branch: " CSE",
-                degree: "BTech",
-                designation: " Cyber security engineer",
-                salary: " 7 LPA",
-                company_logo: " images/HCL.png",
-                alt_text: " MOD"
-            },
-            {
-                company_name: " Wipro's IT consulting",
-                img: "images/palak khurana.jpeg",
-                name: " Palak Khurana",
-                branch: " CSE",
-                degree: " BTech",
-                designation: " Software Developer",
-                salary: " 7 LPA",
-                company_logo: " images/wipro.jpg",
-                alt_text: " wipro"
-            },
-            {
-                company_name: " Genpact India Private Limited",
-                img: "images/ankit.jpeg",
-                name: " Ankit",
-                branch: " CSE",
-                degree: " BTech",
-                designation: " (AML) analyst",
-                salary: "7 LPA",
-                company_logo: "images/Genpact_logo.svg.png",
-                alt_text: " Genpact"
-            },
-            {
-                company_name: " Ministry of Defence",
-                img: " images/sumit.jpeg",
-                name: " Sumit",
-                branch: " CSE",
-                degree: " BCA",
-                designation: " DEO",
-                salary: " 7 LPA",
-                company_logo: "images/mof.png",
-                alt_text: " Ministry of Defence"
-            },
-
-        ];
-
-
-
-        let card = "";
-        cards.map((item) => {
-            card += `
-                    
-                <div class="card">
-                <div class="company-name">${item.company_name}</div>
-                <img src="${item.img}" alt="Student Image" class="profile">
-                <div class="info">
-                    <p><strong>Name:</strong>${item.name}</p>
-                    <p><strong>Branch:</strong>${item.branch}</p>
-                    <p><strong>Degree:</strong>${item.degree}</p>
-                    <p><strong>designation:</strong>${item.designation}</p>
-                </div>
-                <p class="salary">${item.salary}</p>
-                <img src="${item.company_logo}" alt="${item.alt_text}" class="company-logo">
-            </div>
-                    
-                    `;
-        })
-
-        document.getElementById('cardProfile').innerHTML = card;
-
-
-    </script>
     <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-container">
@@ -246,7 +140,7 @@
     </footer>
 
 
-
+<script src="script.js"></script>
 </body>
 
 </html>
